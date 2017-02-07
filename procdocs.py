@@ -56,3 +56,4 @@ def initDirectory(datestr):            #创建相应的工作目录
 if __name__ == '__main__':
     date = getdate()
     initDirectory(date)
+
