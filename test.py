@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-img=cv2.imread('test.jpg')
+img=cv2.imread('note.jpg')
 GrayImage=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 # ret,thresh1=cv2.threshold(GrayImage,127,255,cv2.THRESH_BINARY)
 ret,thresh2=cv2.threshold(GrayImage,127,255,cv2.THRESH_BINARY_INV)
@@ -26,7 +26,7 @@ print(edges.shape)
 plt.imshow(edges, 'gray')
 plt.show()
 
-lines = cv2.HoughLinesP(edges,1,np.pi/180,20,minLineLength=5,maxLineGap=15)
+lines = cv2.HoughLinesP(thresh5,1,np.pi/180,20,minLineLength=5,maxLineGap=15)
 print(lines)
 print(lines.shape)
 
