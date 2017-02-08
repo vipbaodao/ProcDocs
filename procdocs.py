@@ -24,6 +24,7 @@ def getdate():                       # 获取日期
 
 
 def getFilefromCamera():            # 从高拍仪获取文件图像
+
     pass
 
 def getImagesfromPath():            # 从指定位置获取文件图像
